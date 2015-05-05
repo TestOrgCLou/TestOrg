@@ -1,0 +1,299 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// 中文(中华人民共和国) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 4, 2\r\n"
+    "#pragma code_page(936)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""res\\ProjectX.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""l.chs\\afxres.rc""          // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON                    "res\\Phone.ico"
+IDI_ICON1               ICON                    "res\\TITLE.ICO"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOG  0, 0, 274, 92
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "关于 "
+FONT 9, "宋体"
+BEGIN
+    PUSHBUTTON      "确定",IDOK,228,38,45,15
+    ICON            IDR_MAINFRAME,IDC_STATIC,12,26,20,20
+    LTEXT           "光储项目数据库导入导出V1C1B1001",IDC_STATIC,54,23,151,13,SS_NOPREFIX
+    LTEXT           "版权所有 (C) 2014   袁瑞",IDC_STATIC,54,39,173,8
+END
+
+IDD_PROJECTX_DIALOG DIALOGEX 0, 0, 528, 329
+STYLE DS_SETFONT | DS_MODALFRAME | WS_MINIMIZEBOX | WS_MAXIMIZEBOX | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "通讯录"
+MENU IDR_MENU1
+FONT 9, "宋体", 0, 0, 0x1
+BEGIN
+    CONTROL         "",IDC_MSFLEXGRID1,
+                    "{6262D3A0-531B-11CF-91F6-C2863C385E30}",WS_TABSTOP,0,0,528,303
+    CONTROL         "Progress1",IDC_PROGRESS_LOAD,"msctls_progress32",WS_BORDER,0,307,325,18
+    LTEXT           "进度条进度：0%",IDC_STATIC_1,347,307,160,17
+END
+
+IDD_DIALOG_SELECTDEVICE DIALOG  0, 0, 187, 96
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "选择设备类型"
+FONT 10, "System"
+BEGIN
+    DEFPUSHBUTTON   "确定",IDOK,36,65,50,14
+    PUSHBUTTON      "取消",IDCANCEL,109,65,50,14
+    COMBOBOX        IDC_COMBO_DEVICE,34,20,120,127,CBS_DROPDOWN | WS_VSCROLL | WS_TABSTOP
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "080404B0"
+        BEGIN
+            VALUE "FileDescription", "ProjectX Microsoft 基础类应用程序"
+            VALUE "FileVersion", "1, 0, 0, 1"
+            VALUE "InternalName", "ProjectX"
+            VALUE "LegalCopyright", "版权所有 (C) 2011"
+            VALUE "OriginalFilename", "ProjectX.EXE"
+            VALUE "ProductName", "ProjectX 应用程序"
+            VALUE "ProductVersion", "1, 0, 0, 1"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x804, 1200
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        BOTTOMMARGIN, 88
+    END
+
+    IDD_DIALOG_SELECTDEVICE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 180
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 89
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog Info
+//
+
+IDD_PROJECTX_DIALOG DLGINIT
+BEGIN
+    IDC_MSFLEXGRID1, 0x37a, 297, 0
+0x0024, 0x0000, 0x0037, 0x0032, 0x0045, 0x0036, 0x0037, 0x0031, 0x0032, 
+0x0030, 0x002d, 0x0035, 0x0039, 0x0035, 0x0039, 0x002d, 0x0031, 0x0031, 
+0x0063, 0x0066, 0x002d, 0x0039, 0x0031, 0x0046, 0x0036, 0x002d, 0x0043, 
+0x0032, 0x0038, 0x0036, 0x0033, 0x0043, 0x0033, 0x0038, 0x0035, 0x0045, 
+0x0033, 0x0030, 0x0012, 0x0000, 0x0001, 0x0000, 0x000a, 0x0000, 0x004c, 
+0x0000, 0x0000, 0x4321, 0x1234, 0x0008, 0x0000, 0x51db, 0x0000, 0x2f07, 
+0x0000, 0x6f42, 0x506f, 0x0000, 0x0006, 0x0080, 0x0000, 0x0002, 0x0000, 
+0x0004, 0x0000, 0x0001, 0x0000, 0x0001, 0x0000, 0x0000, 0x0000, 0x0005, 
+0x8000, 0x0008, 0x8000, 0xe9ec, 0x00d8, 0x0012, 0x8000, 0x000d, 0x8000, 
+0x000e, 0x8000, 0xc0c0, 0x00c0, 0xc0c0, 0x00c0, 0x0000, 0x0000, 0x0000, 
+0x0000, 0x0001, 0x0000, 0x0001, 0x0000, 0x0000, 0x0000, 0x0001, 0x0000, 
+0x0000, 0x0000, 0x0000, 0x0000, 0x0001, 0x0001, 0x0000, 0x0001, 0x0002, 
+0x0003, 0x0000, 0x0000, 0x0000, 0x0000, 0x0001, 0x0001, 0x0000, 0x0001, 
+0x0004, 0x0000, 0x0000, 0x0000, 0x5203, 0x0be3, 0x8f91, 0x11ce, 0xe39d, 
+0xaa00, 0x4b00, 0x51b8, 0x8601, 0x0000, 0x0190, 0x5f90, 0x0001, 0xcb04, 
+0xccce, 0x04e5, 0xe352, 0x910b, 0xce8f, 0x9d11, 0x00e3, 0x00aa, 0xb84b, 
+0x6c51, 0x0074, 0x0000, 0x0000, "\000" 
+    0
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MENU1 MENU 
+BEGIN
+    POPUP "设备类型选择"
+    BEGIN
+        MENUITEM "设备类型选择",                      IDR_SELECT_DEVICE
+        MENUITEM SEPARATOR
+        MENUITEM "设备类型查看",                      IDR_SHOW_DEVICE
+        MENUITEM SEPARATOR
+        MENUITEM "导入设备类型",                      ID_LOADIN_DEVICETYPE
+        MENUITEM "导出设备类型",                      ID_EXPORT_DEVICETYPE
+    END
+    POPUP "数据库表格查看"
+    BEGIN
+        MENUITEM "查看参数信息",                      ID_SHOW_PARAM
+        MENUITEM "查看命令地址信息",                    ID_SHOW_CMD
+        MENUITEM SEPARATOR
+        MENUITEM "查看日志类型",                      ID_SHOW_LOGTYPE
+        MENUITEM "查看日志详细信息",                    ID_SHOW_LOG
+        MENUITEM SEPARATOR
+        MENUITEM "查看主界面参数信息",                   ID_SHOW_MAINPARAM
+        MENUITEM "查看主界面开关状态",                   ID_SHOW_MAINSWITH
+        MENUITEM SEPARATOR
+        MENUITEM "查看波形信息",                      ID_SHOW_WAVEPARAM
+        MENUITEM "查看变比系数",                      ID_SHOW_COEFT
+    END
+    POPUP "数据库导入导出"
+    BEGIN
+        MENUITEM "导入当前设备数据",                    ID_LOADIN_NOW
+        MENUITEM "导入所有设备数据",                    ID_LOADIN_ALL
+        MENUITEM SEPARATOR
+        MENUITEM "导出当前设备数据",                    ID_EXPORTOUT_NOW
+        MENUITEM "导出所有设备数据",                    ID_EXPORT_ALL
+    END
+    POPUP "帮助"
+    BEGIN
+        MENUITEM "关于",                          IDR_ABOUT
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE 
+BEGIN
+    IDS_ABOUTBOX            "关于 ProjectX(&A)..."
+END
+
+STRINGTABLE 
+BEGIN
+    ID_FILE_PRINT           "打印"
+END
+
+STRINGTABLE 
+BEGIN
+    IDR_DEVICESHOW          "查看当前所有设备类型"
+END
+
+STRINGTABLE 
+BEGIN
+    IDR_SELECT              "选择某个设备类型"
+END
+
+#endif    // 中文(中华人民共和国) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE 4, 2
+#pragma code_page(936)
+#endif //_WIN32
+#include "res\ProjectX.rc2"  // non-Microsoft Visual C++ edited resources
+#include "l.chs\afxres.rc"          // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
